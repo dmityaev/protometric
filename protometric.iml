@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="log4j-1.2.17" level="project" />
+    <orderEntry type="library" name="postgresql-9.4.1208" level="project" />
+    <orderEntry type="library" name="com.google.code.gson:gson:2.6.1" level="project" />
+    <orderEntry type="library" name="elasticsearch-2.2.0" level="project" />
+    <orderEntry type="library" name="com.google.guava:guava:18.0" level="project" />
+    <orderEntry type="library" name="org.apache.lucene:lucene-core:5.5.0" level="project" />
+    <orderEntry type="library" name="jsr166e-1.0.0" level="project" />
+    <orderEntry type="library" name="joda-time-2.8.2" level="project" />
+    <orderEntry type="library" name="t-digest-3.0" level="project" />
+    <orderEntry type="library" name="netty-3.10.5.Final" level="project" />
+    <orderEntry type="library" name="hppc-0.7.1" level="project" />
+    <orderEntry type="library" name="compress-lzf-1.0.2" level="project" />
+  </component>
+</module>

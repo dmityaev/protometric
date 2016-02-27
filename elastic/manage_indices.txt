@@ -1,0 +1,16 @@
+#initialize kibana
+curl -XPUT 'localhost:9200/.kibana?pretty'
+curl -XPUT 'localhost:9200/.kibana?pretty' -d '{"settings" : {"index.mapper.dynamic": true}}'
+curl -XDELETE 'http://localhost:9200/.kibana/'
+
+#initialize protometric index
+curl -XDELETE 'http://localhost:9200/protometric?pretty'
+curl -XPUT 'localhost:9200/protometric?pretty'
+#curl -XPUT 'localhost:9200/protometric?pretty' -F "file=@settings.json"
+
+#
+curl 'localhost:9200/_cat/indices/?v'
+curl -XGET 'http://localhost:9200/jdbc/jdbc/1'
+curl -XGET 'http://localhost:9200/protometric/_search?q=event:*click*'
+curl -XPUT 'localhost:9200/protometric/entry/_bulk' -d @bulkinsert.json
+curl -XGET 'localhost:9200'
